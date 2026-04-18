@@ -1,3 +1,8 @@
+# Jesse Livermore - 交易之神 Skill
+
+![GitHub](https://img.shields.io/github/license/yourusername/livermore-skill)
+![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/livermore-skill)
+
 ## 项目简介
 
 这是一个基于杰西·利弗莫尔（Jesse Livermore）交易哲学和人生经验的人物Skill框架，旨在为交易者提供趋势交易、风险控制和情绪管理的思维指导。通过模拟利弗莫尔的思维方式和表达风格，帮助用户在市场中做出更明智的交易决策。
