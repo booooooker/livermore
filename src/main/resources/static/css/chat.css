@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    width: min(900px, 90%);
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.hint {
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+textarea {
+    resize: vertical;
+    border: 1px solid #d5dbe0;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 14px;
+}
+
+button {
+    width: fit-content;
+    border: none;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #145ca8;
+}
+
+.records {
+    margin-top: 1.5rem;
+}
+
+.message {
+    border: 1px solid #eef1f4;
+    border-radius: 10px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #4f5f6f;
+    font-size: 13px;
+}
+
+.content {
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
