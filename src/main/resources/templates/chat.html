@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天记录生成器</title>
+    <link rel="stylesheet" th:href="@{/css/chat.css}">
+</head>
+<body>
+<div class="container">
+    <h1>聊天记录生成器</h1>
+    <p class="hint">每行一条，支持“角色:内容”或“角色：内容”格式。</p>
+
+    <form th:action="@{/generate}" method="post" th:object="${form}">
+        <label for="conversation">输入对话内容</label>
+        <textarea id="conversation" th:field="*{conversation}" rows="10" placeholder="例如：\n小明: 你好\n小红: 你好呀"></textarea>
+        <button type="submit">生成聊天记录</button>
+    </form>
+
+    <section class="records" th:if="${!records.isEmpty()}">
+        <h2>生成结果</h2>
+        <div class="message" th:each="record : ${records}">
+            <div class="meta">
+                <span class="speaker" th:text="${record.speaker()}">角色</span>
+                <span class="time" th:text="${#temporals.format(record.timestamp(), 'yyyy-MM-dd HH:mm:ss')}">时间</span>
+            </div>
+            <div class="content" th:text="${record.content()}">消息内容</div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
